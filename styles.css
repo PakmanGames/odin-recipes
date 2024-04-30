@@ -1,7 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Change font and background colour of the body of pages */
 body {
     font-family: "Brush Script MT",monospace, sans-serif;
     background-color:bisque;
+}
+
+.title,
+.subtitle {
+    text-align: center;
+    border: 10px inset black;
+    margin: 30px auto;
+}
+
+/* Changes the title on the homepage */
+.homepage .title h1 {
+    height: 100px;
+    width: 500px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: rgb(219, 192, 40);
+    color: white;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.homepage .title.subtitle {
+    height: 150px;
+    width: 700px;
+    padding: 5px;
+    background-color: white;
+    font-size: 30px;
 }
 
 /* Change the background colour of the body of recipe pages */
@@ -9,15 +40,10 @@ body.recipe {
     background-color: rgba(243, 197, 204, 0.418);
 }
 
-/* Center aligns and changes font size of any titles */
-.title {
-    text-align: center;
-    font-size: 40px;
-}
-
 /* Changes the background colour of recipe titles */
 .recipe .title {
     background-color: lightpink;
+    width: 600px;
 
 }
 
@@ -25,18 +51,14 @@ body.recipe {
 .recipe .title.subtitle {
     font-size:30px;
     background-color: rgb(248, 218, 223);
+    margin: 30px auto;
+    width: 300px;
 }
 
 /* Changes font of recipe description bodies */
 .recipe .description .body {
+    text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* Changes the title on the homepage */
-.homepage h1.title {
-    font-weight: 1000;
-    background-color: rgb(224, 196, 37);
-    color: white;
 }
 
 /* Center aligns and changes font of unordered lists */
@@ -44,19 +66,29 @@ body.recipe {
     text-align: center;
     font-size: 20px;
     font-family:'Courier New', Courier, monospace;
+    margin: 30px auto;
 }
 
-/* Centers images and scales them accordingly */
 div img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 50px auto;
     height: auto;
     width: 400px;
 }
 
-/* Center aligns and changes the font of the buttons at the bottom of recipe pages */
+.recipe div img {
+    border: 10px inset black;
+}
+
+
 div.button {
+    height: 150px;
+    width: 250px;
+    background-color: rgb(224, 145, 159);
+    margin: 30px auto;
+    padding: 10px;
+    color: white;
+    border: 10px inset black;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
